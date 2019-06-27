@@ -5,13 +5,13 @@ import org.apache.mina.transport.socket.nio.NioDatagramAcceptor;
 
 public class UDPCustomServer extends SimpleServer {
 
-	public UDPCustomServer(final int port) {
-		super(port);
-	}
+    public UDPCustomServer(final int port) {
+        super(port);
+    }
 
-	@Override
-	public IoAcceptor getAcceptor() {
-		return new NioDatagramAcceptor();
-	}
+    @Override
+    public IoAcceptor getAcceptor() {
+        return new NioDatagramAcceptor();
+    }
 
 }
